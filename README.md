@@ -57,7 +57,7 @@ Monday | Wednesday
 * [Python exercise](code/02_file_io_homework.py) ([solution](code/02_file_io_homework_solution.py))
 * Read through the [project page](project.md) in detail.
 * Review a few [projects from past Data Science courses](https://github.com/justmarkham/DAT-project-examples) to get a sense of the variety and scope of student projects.
-    * Check for proper setup of Git by running `git clone https://github.com/justmarkham/DAT-project-examples.git`
+    * Check for proper setup of Git by running `git clone https://github.com/bbalin12/DAT-project-examples.git`
 
 **Optional:**
 * If you need more practice with Python, review the "Python Overview" section of [A Crash Course in Python](http://nbviewer.ipython.org/gist/rpmuller/5920182), work through some of [Codecademy's Python course](http://www.codecademy.com/en/tracks/python), or work through [Google's Python Class](https://developers.google.com/edu/python/) and its exercises.
