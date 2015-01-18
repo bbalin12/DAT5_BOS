@@ -2,9 +2,9 @@
 
 Course materials for [General Assembly's Data Science course](https://generalassemb.ly/education/data-science) in Boston, MA (20 January 2015 - 07 April 2015). View student work in the [student repository](https://github.com/bbalin12/DAT5_BOS_students).
 
-**Instructor:** Bryan Balin. **Teaching Assistant:** TBD.
+**Instructor:** Bryan Balin. **Teaching Assistant:** Harish Krishnamurthy.
 
-**Office hours:** TBD by the TAs. 
+**Office hours:** Wednesday 5-6pm; Friday 5-6:30pm, [@Boston Public Library](http://www.bpl.org/); as needed Tuesdays and Thursdas @GA. 
 
 **[Course Project information](project.md)**
 
@@ -69,7 +69,7 @@ Monday | Wednesday
 
 
 ### Class 3:  Git and GitHub
-#    * Check for proper setup of Git by running `git clone https://github.com/bbalin12/DAT-project-examples.git`
+* Check for proper setup of Git by running `git clone https://github.com/bbalin12/DAT-project-examples.git`
 
 ### Class 4: Getting Data
 
