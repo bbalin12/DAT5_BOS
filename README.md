@@ -10,9 +10,9 @@ Course materials for [General Assembly's Data Science course](https://generalass
 
 Monday | Wednesday
 --- | ---
-1/20: [Introduction](#class-1-introduction) | 1/22: [Python](#class-2-python)
-1/27: [Getting Data](#class-3-getting-data) | 1/29: [Git and GitHub](#class-4-git-and-github)
-2/3: [Pandas](#class-5-pandas)<br>**Milestone:** Question and Data Set | 2/5: [Numpy, Machine Learning, KNN](#class-6-numpy-machine-learning-knn)
+1/20: [Introduction](#class-1-introduction) | 1/22: [Python & Pandas](#class-2-python-&-pandas)
+1/27: [Git and GitHub](#class-3-git-and-github) | 1/29: [Getting Data](#class-4-getting-data)
+2/3: [Advanced Pandas](#class-5-advanced-pandas)<br>**Milestone:** Question and Data Set | 2/5: [Numpy, Machine Learning, KNN](#class-6-numpy-machine-learning-knn)
 2/10:  [scikit-learn, Model Evaluation Procedures](#class-7-scikit-learn-model-evaluation-procedures)| 2/12: [Linear Regression](#class-8-linear-regression)
 2/17: [Logistic Regression,<br>Preview of Other Models](#class-9-logistic-regression-preview-of-other-models) | 2/19: [Model Evaluation Metrics](#class-10-model-evaluation-metrics)<br>**Milestone:** Data Exploration and Analysis Plan
 2/24: [Working a Data Problem](#class-11-working-a-data-problem) | 2/26: [Clustering and Visualization](#class-12-clustering-and-visualization)<br>**Milestone:** Deadline for Topic Changes
@@ -40,24 +40,25 @@ Monday | Wednesday
 * Resolve any installation issues before next class.
 
 **Optional:**
-* Review the [code](code/00_python_refresher.py) from Saturday's Python refresher for a recap of some Python basics.
+* Review the [code](code/00_python_refresher.py) for a recap of some Python basics.
 * Read [Analyzing the Analyzers](http://cdn.oreillystatic.com/oreilly/radarreport/0636920029014/Analyzing_the_Analyzers.pdf) for a useful look at the different types of data scientists.
 * Check out the [PyData Boston Meetup page](http://www.meetup.com/PyData-Boston/) to become acquainted with the local data community.
 
 
-### Class 2: Python
-* Brief overview of Python environments: Python interpreter, IPython interpreter, Spyder
-* Python quiz ([solution](code/02_python_quiz_solution.py))
-* Working with data in Python
-    * Obtain data from a [public data source](public_data.md)
-    * [FiveThirtyEight alcohol data](https://github.com/fivethirtyeight/data/tree/master/alcohol-consumption), and [revised data](data/drinks.csv) (continent column added)
-    * Reading and writing files in Python ([code](code/02_file_io.py))
+### Class 2: Python & Pandas
+* Brief overview of Python
+* Brief overview of Python environments: Python scripting, IPython interpreter, Spyder
+* Working with data in Pandas
+    * Loading and viewing data
+    * Indexing and selecting data
+    * Assigning, reassigning, and splitting data
+    * Describing and summarizing data
+    * Plotting data
 
 **Homework:**
-* [Python exercise](code/02_file_io_homework.py) ([solution](code/02_file_io_homework_solution.py))
+* Do the [class homework](https://github.com/justmarkham/DAT4/blob/master/homework/05_pandas.md) by Tuesday.
 * Read through the [project page](project.md) in detail.
 * Review a few [projects from past Data Science courses](https://github.com/justmarkham/DAT-project-examples) to get a sense of the variety and scope of student projects.
-    * Check for proper setup of Git by running `git clone https://github.com/bbalin12/DAT-project-examples.git`
 
 **Optional:**
 * If you need more practice with Python, review the "Python Overview" section of [A Crash Course in Python](http://nbviewer.ipython.org/gist/rpmuller/5920182), work through some of [Codecademy's Python course](http://www.codecademy.com/en/tracks/python), or work through [Google's Python Class](https://developers.google.com/edu/python/) and its exercises.
@@ -67,12 +68,12 @@ Monday | Wednesday
 * [Online Python Tutor](http://pythontutor.com/) is useful for visualizing (and debugging) your code.
 
 
-### Class 3: Getting Data
+### Class 3:  Git and GitHub
+#    * Check for proper setup of Git by running `git clone https://github.com/bbalin12/DAT-project-examples.git`
 
+### Class 4: Getting Data
 
-### Class 4: Git and GitHub
-
-### Class 5: Pandas
+### Class 5: Advanced Pandas
 
 
 ### Class 6: Numpy, Machine Learning, KNN
