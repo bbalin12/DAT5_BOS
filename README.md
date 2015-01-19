@@ -46,7 +46,7 @@ Monday | Wednesday
 
 
 ### Class 2: Python & Pandas
-[slides](slides/02_python_in_data_science.pdf))
+[slides](slides/02_python_in_data_science.pdf)
 * Brief overview of Python
 * Brief overview of Python environments: Python scripting, IPython interpreter, Spyder
 * Working with data in Pandas
