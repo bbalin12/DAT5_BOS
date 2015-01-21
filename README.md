@@ -8,7 +8,7 @@ Course materials for [General Assembly's Data Science course](https://generalass
 
 **[Course Project information](project.md)**
 
-Monday | Wednesday
+Tuesday | Thursday
 --- | ---
 1/20: [Introduction](#class-1-introduction) | 1/22: [Python & Pandas](#class-2-python-&-pandas)
 1/27: [Git and GitHub](#class-3-git-and-github) | 1/29: [Getting Data](#class-4-getting-data)
