@@ -57,7 +57,7 @@ Tuesday | Thursday
     * Plotting data
 
 **Homework:**
-* Do the [class homework](https://github.com/bbalin12/DAT5-BOS/blob/master/homework/02_pandas.md) by Tuesday.
+* Do the [class homework](/homework/02_pandas.md) by Tuesday.
 * Read through the [project page](project.md) in detail.
 * Review a few [projects from past Data Science courses](https://github.com/justmarkham/DAT-project-examples) to get a sense of the variety and scope of student projects.
 
