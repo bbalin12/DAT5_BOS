@@ -72,9 +72,10 @@ Tuesday | Thursday
 * [Online Python Tutor](http://pythontutor.com/) is useful for visualizing (and debugging) your code.
 
 
-### Class 3:  Git and GitHub
+### Class 3: Git and GitHub
 [slides](slides/03_git_and_github.pdf)
 * Check for proper setup of Git by running `git clone https://github.com/bbalin12/DAT-project-examples.git`
+
 **Homework:**
 * Download the following for Class 4:
 	* [SQLite](http://www.sqlite.org/download.html).  Please make sure to download the precompiled binaries for your OS, NOT the source code. 
@@ -85,6 +86,7 @@ Tuesday | Thursday
 
 ### Class 4: SQL
 [slides](slides/04_sql_tutorial.pdf)
+
 [Overview of the baseball archive]()
 * Installation of SQLite, Sublime, DB Visualizer, and our dataset
 * The SELECT statement
@@ -100,6 +102,22 @@ Tuesday | Thursday
 
 **Homework:** 
 * Complete the in-class excercises, if you haven't already:
+	1) Find me the player with the most at-bats in a single season.
+	2) Find me the name of the the player with the most at-bats in baseball history.
+	3) Find the average number of at_bats of players in their rookie season.
+	4) Find the average number of at_bats of players in their final season for all players born after 1980. 
+	5) Find the average number of at_bats of Yankees players who began their second season at or after 1980.
+
+* Create full, working queries to answer at least four novel questions you have about the dataset using the following concepts:
+	* The WHERE clause
+	* ORDER BY
+	* LEFT JOIN and INNER JOIN
+	* GROUP BY
+	* SELECT DISTINCT
+	* CASE statements
+	* Subqueries and IS NOT NULL
+
+* Using Pandas, (1) query the Baseball dataset, (2) transform the data in some way, and (3) write a new table back to the databse.
 
 
 ### Class 5: Advanced Pandas
