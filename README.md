@@ -11,7 +11,7 @@ Course materials for [General Assembly's Data Science course](https://generalass
 Tuesday | Thursday
 --- | ---
 1/20: [Introduction](#class-1-introduction) | 1/22: [Python & Pandas](#class-2-python-&-pandas)
-1/27: [Git and GitHub](#class-3-git-and-github) | 1/29: [Getting Data](#class-4-getting-data)
+1/27: [Git and GitHub](#class-3-git-and-github) | 1/29: [SQL](#class-4-SQL)
 2/3: [Advanced Pandas](#class-5-advanced-pandas)<br>**Milestone:** Question and Data Set | 2/5: [Numpy, Machine Learning, KNN](#class-6-numpy-machine-learning-knn)
 2/10:  [scikit-learn, Model Evaluation Procedures](#class-7-scikit-learn-model-evaluation-procedures)| 2/12: [Linear Regression](#class-8-linear-regression)
 2/17: [Logistic Regression,<br>Preview of Other Models](#class-9-logistic-regression-preview-of-other-models) | 2/19: [Model Evaluation Metrics](#class-10-model-evaluation-metrics)<br>**Milestone:** Data Exploration and Analysis Plan
@@ -47,6 +47,9 @@ Tuesday | Thursday
 
 ### Class 2: Python & Pandas
 [slides](slides/02_python_in_data_science.pdf)
+[code: Pandas](code/02_pandas_example.py)
+[code: Python](code/02_python_example.py)
+[code: Python refresher](code/00_python_refresher.py)
 * Brief overview of Python
 * Brief overview of Python environments: Python scripting, IPython interpreter, Spyder
 * Working with data in Pandas
@@ -70,9 +73,34 @@ Tuesday | Thursday
 
 
 ### Class 3:  Git and GitHub
+[slides](slides/03_git_and_github.pdf)
 * Check for proper setup of Git by running `git clone https://github.com/bbalin12/DAT-project-examples.git`
+**Homework:**
+* Download the following for Class 4:
+	* [SQLite](http://www.sqlite.org/download.html).  Please make sure to download the precompiled binaries for your OS, NOT the source code. 
+	* [Sublime Text Editor](http://www.sublimetext.com/).
+	* [DB Visualizer](http://www.dbvis.com/).  Please download the free version. 
+	* [Baseball archive for SQLite](https://github.com/jknecht/baseball-archive-sqlite/blob/master/lahman2013.sqlite). 
 
-### Class 4: Getting Data
+
+### Class 4: SQL
+[slides](slides/04_sql_tutorial.pdf)
+[Overview of the baseball archive]()
+* Installation of SQLite, Sublime, DB Visualizer, and our dataset
+* The SELECT statement
+* The WHERE clause
+* ORDER BY
+* LEFT JOIN and INNER JOIN
+* GROUP BY
+* DISTINCT
+* CASE statements
+* Subqueries and IS NOT NULL
+* CREATE TABLES
+* Using Pandas and SQL Seamlessly
+
+**Homework:** 
+* Complete the in-class excercises, if you haven't already:
+
 
 ### Class 5: Advanced Pandas
 
