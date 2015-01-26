@@ -97,16 +97,18 @@ Tuesday | Thursday
 * DISTINCT
 * CASE statements
 * Subqueries and IS NOT NULL
-* CREATE TABLES
+* CREATE TABLE
 * Using Pandas and SQL Seamlessly
 
 **Homework:** 
 * Complete the in-class excercises, if you haven't already:
-	1) Find me the player with the most at-bats in a single season.
-	2) Find me the name of the the player with the most at-bats in baseball history.
-	3) Find the average number of at_bats of players in their rookie season.
-	4) Find the average number of at_bats of players in their final season for all players born after 1980. 
-	5) Find the average number of at_bats of Yankees players who began their second season at or after 1980.
+	* Find the player with the most at-bats in a single season.
+	* Find the name of the the player with the most at-bats in baseball history.
+	* Find the average number of at_bats of players in their rookie season.
+	* Find the average number of at_bats of players in their final season for all players born after 1980. 
+	* Find the average number of at_bats of Yankees players who began their second season at or after 1980.
+	* Pass the SQL in the previous bullet into a pandas DataFrame and write it back to SQLite.
+
 
 * Create full, working queries to answer at least four novel questions you have about the dataset using the following concepts:
 	* The WHERE clause
@@ -118,6 +120,15 @@ Tuesday | Thursday
 	* Subqueries and IS NOT NULL
 
 * Using Pandas, (1) query the Baseball dataset, (2) transform the data in some way, and (3) write a new table back to the databse.
+
+**Resources:**
+*[SQLite homepage](https://www.sqlite.org/index.html)
+*[SQLite Syntax](https://www.sqlite.org/lang.html)
+
+*SQL Tutorials: 
+	* Note: These tutorials are for all flavors of SQL, not just SQLite, so some of the functions may behave differently in SQLite.
+	* [SQL tutorial](http://www.w3schools.com/sql/)
+	* [SQLZoo](http://sqlzoo.net/wiki/Main_Page)
 
 
 ### Class 5: Advanced Pandas

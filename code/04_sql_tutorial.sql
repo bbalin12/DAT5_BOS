@@ -51,7 +51,7 @@ WHERE yearID > 2000 AND playerID = 'aardsda01'
 ORDER BY league_id ASC, games_as_batter DESC;
 
 
---5) JOINs and table aliases
+--5) Joins and table aliases
 --5A) LEFT JOIN (on) --say we want to pull in the given name of the batter
 SELECT b.playerID, b.yearID, b.TeamID, b.lgID as league_id, b.G as games, b.G_batting as games_as_batter, 
 b.AB as at_bats, b.R as Runs, b.H as Hits, m.nameGiven 
@@ -79,7 +79,7 @@ and b.yearID < 2010
 order by b.yearID desc
 
 
---6) GROUP BYs -- COUNT, MIN, MAX, SUM
+--6) GROUP BYs -- COUNT, MIN, MAX, AVG, SUM
 --Let's go back to the Batting table. Say you want to count the number of player IDs per team ID in the table.
 --FIRST, let's pull in the team name by using a LEFT JOIN.  Notice I join on two colums as the data in both Teams and Batting is at the year level.
 SELECT b.teamID, b.playerID, t.teamID, t.name from Batting b
@@ -134,7 +134,7 @@ FROM Batting b;
 --notice my use of b.* to select all columns without explicitly naming them. 
 
 
---9) Subqueries and IS NOT NULL
+--9) Subqueries
 -- say you wanted to know the batting information for each player's last year.
 -- first, find the last year of each player in the Batting table -- we use the MAX function for this
 SELECT  playerID, max(yearID) as maxyear from Batting 
@@ -172,24 +172,15 @@ WHERE  sq1.maxyear is not null;
 -- once this is done, I can query from the new table as you do with any other:
 SELECT * from lastyear;
 
-
 -- EXCERCISES:  
 
--- 1) Find me the player with the most at-bats in a single season.
--- 2) Find me the name of the the player with the most at-bats in baseball history.
+-- 1) Find the player with the most at-bats in a single season.
+-- 2) Find the name of the the player with the most at-bats in baseball history.
 -- 3) Find the average number of at_bats of players in their rookie season.
 -- 4) Find the average number of at_bats of players in their final season for all players born after 1980. 
 -- 5) Find the average number of at_bats of Yankees players who began their second season at or after 1980.
 
 
-Resources:
 
-SQLite homepage: https://www.sqlite.org/index.html
-SQLite Syntax: https://www.sqlite.org/lang.html
-
-SQL Tutorials: 
-Note: These tutorials are for all flavors of SQL, not just SQLite, so some of the functions may behave differently in SQLite.
-SQL tutorial: http://www.w3schools.com/sql/ 
-SQLZoo: http://sqlzoo.net/wiki/Main_Page
 
 THEN DO HOW PANDAS CONNECTS TO SQL, READS/WRITES. 
