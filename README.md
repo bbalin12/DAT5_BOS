@@ -46,10 +46,8 @@ Tuesday | Thursday
 
 
 ### Class 2: Python & Pandas
-[slides](slides/02_python_in_data_science.pdf)
-[code: Pandas](code/02_pandas_example.py)
-[code: Python](code/02_python_example.py)
-[code: Python refresher](code/00_python_refresher.py)
+[slides](slides/02_python_in_data_science.pdf).  [Python refresher code](code/00_python_refresher.py).  [Python code](code/02_python_example.py). [Pandas code](code/02_pandas_example.py).
+
 * Brief overview of Python
 * Brief overview of Python environments: Python scripting, IPython interpreter, Spyder
 * Working with data in Pandas
@@ -87,7 +85,7 @@ Tuesday | Thursday
 ### Class 4: SQL
 [slides](slides/04_sql_tutorial.pdf)
 
-[Overview of the baseball archive]()
+[Overview of the baseball archive](data/baseball_database_description.txt)
 * Installation of SQLite, Sublime, DB Visualizer, and our dataset
 * The SELECT statement
 * The WHERE clause
@@ -122,10 +120,10 @@ Tuesday | Thursday
 * Using Pandas, (1) query the Baseball dataset, (2) transform the data in some way, and (3) write a new table back to the databse.
 
 **Resources:**
-*[SQLite homepage](https://www.sqlite.org/index.html)
-*[SQLite Syntax](https://www.sqlite.org/lang.html)
+	* [SQLite homepage](https://www.sqlite.org/index.html)
+	* [SQLite Syntax](https://www.sqlite.org/lang.html)
 
-*SQL Tutorials: 
+**SQL Tutorials:**
 	* Note: These tutorials are for all flavors of SQL, not just SQLite, so some of the functions may behave differently in SQLite.
 	* [SQL tutorial](http://www.w3schools.com/sql/)
 	* [SQLZoo](http://sqlzoo.net/wiki/Main_Page)
