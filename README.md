@@ -71,10 +71,13 @@ Tuesday | Thursday
 
 
 ### Class 3: Git and GitHub
-[slides](slides/03_git_and_github.pdf)
-* Check for proper setup of Git by running `git clone https://github.com/bbalin12/DAT-project-examples.git`
+* [slides](slides/03_git_and_github.pdf)
+* [GitHub for Windows](https://windows.github.com/)
+* [GitHub for Mac](https://mac.github.com/)
+* [Student directory for this class](https://github.com/bbalin12/DAT5_BOS_students)
 
 **Homework:**
+* Check for proper setup of Git by forking the [data science project examples](https://github.com/bbalin12/DAT-project-examples.git) and pulling the fork to your local hard drive.
 * Download the following for Class 4:
 	* [SQLite](http://www.sqlite.org/download.html).  Please make sure to download the precompiled binaries for your OS, NOT the source code. 
 	* [Sublime Text Editor](http://www.sublimetext.com/).

@@ -22,6 +22,7 @@ type(drinks)
 drinks.head()
 # inspecing the 'drinks' DataFrame by viewing its last 5 rows
 drinks.tail()
+
 # summarizing the columns of the data frame
 drinks.describe()
 
@@ -45,7 +46,7 @@ drinks['country'][0:3]
 # select the country column and the continent column
 # notice the double bracets here - we are passing a list of strings 
 # to the dataframe to get the two columns
-drinks[['country', 'continent']]
+drinks[['country', 'continent']] 
 
 # select the first three rows of the country and continent columns
 drinks[['country', 'continent']][0:3]
@@ -70,8 +71,8 @@ drinks['light_drinker'] = 0
 # look bac at the DataFrame and see the light_drinker column having values
 # of all zero. 
 drinks.head()
-# reassign the first three rows of the 'kight_drinker' column to zero
-# notice I can now access beer_servings as a method of the 'drinks' object
+# reassign the first three rows of the 'light_drinker' column to zero
+# notice I can now access light_drinker as a method of the 'drinks' object
 drinks.light_drinker[0:3] = 1
 # re-inspect the DataFrame.  Notice that there's 1 under light_drinker
 # for the first three 
@@ -90,6 +91,7 @@ drinks.beer_servings[drinks.beer_servings == 1]
 
 # just show the light_drinker column where beer_servings equals 1
 drinks.light_drinker[drinks.beer_servings == 1]
+drinks.country[drinks.beer_servings == 1] 
 
 # reassign all instances of the light_drinker to 1 if beer_servings == 1
 drinks.light_drinker[drinks.beer_servings == 1] = 1
@@ -136,28 +138,30 @@ drinks.sort_index(by='total_litres_of_pure_alcohol').tail(10)
 drinks[drinks.beer_servings==drinks.beer_servings.max()].country
 
 # see mean beer servings by continent
-drinks.groupby('continent').beer_servings.mean()
-
+drinks.groupby('continent').beer_servings.max()
+drinks.groupby('continent').beer_servings.append()
 # missing values are often just excluded
 drinks.describe(include='all')              # excludes missing values
 drinks.continent.value_counts(dropna=False) # includes missing values (new in pandas 0.14.1)
 
 # find missing values in a Series
-drinks.continent.isnull()           # True if NaN, False otherwise
+drinks.continent.isnull()            # True if NaN, False otherwise
+
+drinks[drinks.continent.isnull()]
 drinks.continent.notnull()          # False if NaN, True otherwise
 drinks[drinks.continent.notnull()]  # only show rows where continent is not NaN
 drinks.continent.isnull().sum()     # count the missing values
 
 # find missing values in a DataFrame
-drinks.isnull()             # DataFrame of booleans
+drinks.isnull()            # DataFrame of booleans
 drinks.isnull().sum()       # calculate the sum of each column
 
 # drop missing values
-drinks.dropna()             # drop a row if ANY values are missing
+drinks_no_nans = drinks.dropna()             # drop a row if ANY values are missing
 drinks.dropna(how='all')    # drop a row only if ALL values are missing
 
 # fill in missing values
-drinks.continent.fillna(value='NA')                 # does not modify 'drinks'
+drinks.continent = drinks.continent.fillna(value='NA')                 # does not modify 'drinks'
 drinks.continent.fillna(value='NA', inplace=True)   # modifies 'drinks' in-place
 drinks.fillna(drinks.mean())                        # fill in missing values using mean
 
@@ -177,9 +181,9 @@ drinks.groupby('continent').beer_servings.mean().plot(kind='bar')
 
 
 # histogram of beer servings (shows the distribution of a numeric column)
-drinks.beer_servings.hist(bins=20)
-plt.xlabel('Beer Servings')
-plt.ylabel('Frequency')
+plt = drinks.beer_servings.hist(bins=20)
+#plt.xlabel('Beer Servings')
+#plt.ylabel('Frequency')
 
 # density plot of beer servings (smooth version of a histogram)
 drinks.beer_servings.plot(kind='density', xlim=(0,500))
@@ -194,13 +198,39 @@ drinks.beer_servings.hist(by=drinks.continent, layout=(2, 3))   # change layout 
 drinks.boxplot(column='beer_servings', by='continent')
 
 # scatterplot of beer servings versus wine servings
-drinks.plot(kind='scatter', x='beer_servings', y='wine_servings', alpha=0.3)
+drinks.plot(kind='scatter', x='beer_servings', y='wine_servings', alpha=0.5)
 
 # same scatterplot, except all European countries are colored red
 import numpy as np
 colors = np.where(drinks.continent=='EU', 'r', 'b')
-drinks.plot(x='beer_servings', y='wine_servings', kind='scatter', c=colors)
+drinks.plot( c=colors, x='beer_servings', y='wine_servings', kind='scatter')
 
 # scatterplot matrix of all numerical columns
 pandas.scatter_matrix(drinks)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

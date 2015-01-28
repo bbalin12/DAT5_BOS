@@ -25,7 +25,7 @@ WHERE  sq1.maxyear is not null"""
 df = pandas.read_sql(sql, conn)
 # NOTE: I can use this syntax for SQLite, but for other flavors of SQL
 # (MySQL, PostgreSQL, etc.) you will have to create a SQLAlchemy engine 
-# as the connection. More information on SQLAlchemy at http://www.sqlalchemy.org/. 
+# as the connection.  A PostgresSQL example is below.
 # Stack Overflow also has some nice examples of how to make this connection.
 
 # closing the connection.
@@ -44,3 +44,8 @@ df.to_sql('pandas_table', conn, if_exists = 'replace')
 
 # closing the connection.
 conn.close()
+
+
+## PostgreSQL example.  -- use 'engine' instead of 'conn' above.
+#from sqlalchemy import create_engine
+#engine = create_engine('postgresql://uname:password@999.999.999.999:5432/test_dev')
