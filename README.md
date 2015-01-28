@@ -122,6 +122,8 @@ Tuesday | Thursday
 
 * Using Pandas, (1) query the Baseball dataset, (2) transform the data in some way, and (3) write a new table back to the databse.
 
+* Commit and Sync your SQL and Pandas files to your GitHub fork and issue a pull request.
+
 **Resources:**
 	* [SQLite homepage](https://www.sqlite.org/index.html)
 	* [SQLite Syntax](https://www.sqlite.org/lang.html)
