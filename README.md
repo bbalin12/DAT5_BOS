@@ -24,7 +24,6 @@ Tuesday | Thursday
 4/7: [Project Presentations](#class-22-project-presentations) |
 
 
-
 ### Class 5: Supervised Learning and Model Evaluation
 
 
@@ -135,6 +134,8 @@ Tuesday | Thursday
 
 ### Class 4: SQL
 [slides](slides/04_sql_tutorial.pdf)
+[Python code](code/04_sql_and_pandas.py)
+[SQL code](code/04_sql_tutorial.sql)
 
 [Overview of the baseball archive](data/baseball_database_description.txt)
 * Installation of SQLite, Sublime, DB Visualizer, and our dataset
@@ -183,7 +184,7 @@ Tuesday | Thursday
 
 
 ### Class 5: Supervised Learning and Model Evaluation
-
+[slides](slides/05_ml_knn.pdf.pdf)
 
 ### Class 6: Linear and Logistic Regression
 
