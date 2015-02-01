@@ -12,9 +12,9 @@ Tuesday | Thursday
 --- | ---
 1/20: [Introduction](#class-1-introduction) | 1/22: [Python & Pandas](#class-2-python-&-pandas)
 1/27: [Git and GitHub](#class-3-git-and-github) | 1/29: [SQL](#class-4-SQL)
-2/3: [Supervised Learning and Model Evaluation](#class-5-Supervised-Learning-and-Model-Evaluation) | 2/5: [Linear and Logistic Regression](#class-6-Linear-and-Logistic-Regression) <br>**Milestone:** Begin Work on Question and Data Set
-2/10:  [Naive Bayes, Neural Networks, and Ensemble Methods](#class-7-Naive Bayes-Neural-Networks-and-Ensemble-Methods)| 2/12: [Categorical Data and Feature Selection/Elimination](#class-8-Categorical-Data-and-Feature-Selection/Elimination)
-2/17: [Unsupervised Learning and Dimensionality Reduction](#class-9-Unsupervised-Learning-and-Dimensionality-Reduction) | 2/19: [Clustering and Visualization](#class-10-Clustering-and-Visualization)<br>**Milestone:** Data Exploration and Analysis Plan
+2/3: [Supervised Learning and Model Evaluation](#class-5-Supervised-Learning-and-Model-Evaluation) | 2/5: [Linear Regression](#class-6-Linear-and-Logistic-Regression) <br>**Milestone:** Begin Work on Question and Data Set
+2/10:  [Logistic Regression](#class-7-logistic-regression)| 2/12: [Categorical Data and Feature Selection/Elimination](#class-8-Categorical-Data-and-Feature-Selection/Elimination)
+2/17: [Unsupervised Learning and Dimensionality Reduction](#class-9-Unsupervised-Learning-and-Dimensionality-Reduction) | 2/19: [Naive Bayes, Neural Networks, and Ensemble Methods](#class-10-Naive Bayes-Neural-Networks-and-Ensemble-Methods)<br>**Milestone:** Data Exploration and Analysis Plan
 2/24: [Working a Data Problem](#class-11-working-a-data-problem) | 2/26: [Amazon Web Services & Apache Hive](#class-12-Amazon-Web Services-& Apache-Hive)<br>**Milestone:** Deadline for Topic Changes
 3/3: [Amazon Elastic MapReduce](#class-13-Amazon-Elastic-MapReduce) | 3/5: [Natural Language Processing](#class-14-natural-language-processing)
 3/10: [Decision Trees and Ensembles](#class-15-decision-trees-and-ensembles)<br>**Milestone:** First Draft | 3/12: [Advanced scikit-learn](#class-16-advanced-scikit-learn)
@@ -146,22 +146,38 @@ Tuesday | Thursday
 * K-fold cross validation
 * Tuning model paramaters via grid search
 
-**Homework:** 
+**Homework (due 2/10):** 
+* Build a preditive model that predicts whether a player was inducted to the Baseball Hall of Fame before 2000 using their batting, pitching, and fielding results- not the number of those they received.  Please make sure to use K-fold cross validaiton and grid search to find your optimal mode. 
 * Begin thinking about your class project.  It can be from anywhere you want -- your work, school or general interest. 
 
-### Class 6: Linear and Logistic Regression
+### Class 6: Linear Regression
+[slides](slides/06_linear_regression.pdf)
+* Overview of regression models
+* Estimating linear regression coefficients
+* Determining model relevance
+* Interpreting model coefficients
+* Gotchas
+* Categorical features
+**Homework (due 2/10):** 
+* Using the Baseball dataset, build a linear regression model that predicts how many runs a player will have in a given year.
+	* Begin with more than one possible model; each of which should have at least one categorical dummy feature and at least two continuous explanatory features.
+	* Make sure you check for heteroskedasticity in your models.
+	* Decide whether to include or take out the model's features depending on whether they may be collinear or insignificant. 
+	* Interpret the model's coefficients and intercept.
+	* Calculate the models' R-squared and in-sample RMSE.
+	* Make sure to use a holdout group or k-fold CV to calculate out-of-sample RMSE for your model group.
+	* Decide on the best model to use, and justify why you made that choice. 
 
-
-### Class 7: Naive Bayes, Neural Networks, and Ensemble Methods
+### Class 7: Logistic Regression
 
 
 ### Class 8: Categorical Data, Feature Selection
 
 
-### Class 9: Unsupervised Learning and Dimensionality Reduction
+### Class 9: Naive Bayes, Neural Networks, and Ensemble Methods
 
 
-### Class 10: Clustering and Visualization
+### Class 10: Unsupervised Learning and Dimensionality Reduction
 
 
 ### Class 11: Working a Data Problem
