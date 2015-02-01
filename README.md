@@ -24,52 +24,6 @@ Tuesday | Thursday
 4/7: [Project Presentations](#class-22-project-presentations) |
 
 
-### Class 5: Supervised Learning and Model Evaluation
-
-
-### Class 6: Linear and Logistic Regression
-
-
-### Class 7: Naive Bayes, Neural Networks, and Ensemble Methods
-
-
-### Class 8: Categorical Data and Feature Selection/Elimination
-
-
-### Class 9: Unsupervised Learning and Dimensionality Reduction
-
-
-### Class 10: Clustering and Visualization
-
-
-### Class 11: Working a Data Problem
-
-
-### Class 12: Amazon Web Services & Apache Hive
-
-
-### Class 13: Amazon Elastic MapReduce
-
-
-### Class 14: Natural Language Processing
-
-
-### Class 15: Decision Trees and Ensembles
-
-
-### Class 16: Advanced scikit-learn
-
-
-### Class 17: Web Scraping and Data Retrieval Methods
-
-
-### Class 18: Recommenders
-
-
-### Class 19: Course Review, Companion Tools
-
-
-
 
 ### Installation and Setup
 * Install the [Anaconda distribution](http://continuum.io/downloads) of Python 2.7x.
@@ -185,6 +139,15 @@ Tuesday | Thursday
 
 ### Class 5: Supervised Learning and Model Evaluation
 [slides](slides/05_ml_knn.pdf.pdf)
+* Overview of machine learning
+* Supervised vs unsupervised learning
+* Classification with K-nearest meighbors
+* Training and test sets
+* K-fold cross validation
+* Grid search to tune model paramters
+
+**Homework:** 
+* Begin thinking about your class project.  It can be from anywhere you want -- your work, school or general interest. 
 
 ### Class 6: Linear and Logistic Regression
 
