@@ -158,6 +158,7 @@ Tuesday | Thursday
 * Interpreting model coefficients
 * Gotchas
 * Categorical features
+
 **Homework (due 2/10):** 
 * Using the Baseball dataset, build a linear regression model that predicts how many runs a player will have in a given year.
 	* Begin with more than one possible model; each of which should have at least one categorical dummy feature and at least two continuous explanatory features.
