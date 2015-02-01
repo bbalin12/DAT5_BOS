@@ -144,7 +144,7 @@ Tuesday | Thursday
 * Classification with K-nearest meighbors
 * Training and test sets
 * K-fold cross validation
-* Grid search to tune model paramters
+* Tuning model paramaters via grid search
 
 **Homework:** 
 * Begin thinking about your class project.  It can be from anywhere you want -- your work, school or general interest. 
