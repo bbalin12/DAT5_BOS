@@ -138,7 +138,7 @@ Tuesday | Thursday
 
 
 ### Class 5: Supervised Learning and Model Evaluation
-[slides](slides/05_ml_knn.pdf.pdf)
+[slides](slides/05_ml_knn.pdf)
 * Overview of machine learning
 * Supervised vs unsupervised learning
 * Classification with K-nearest meighbors
