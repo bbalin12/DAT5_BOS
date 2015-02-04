@@ -147,7 +147,7 @@ Tuesday | Thursday
 * Tuning model paramaters via grid search
 
 **Homework (due 2/10):** 
-* Build a preditive model that predicts whether a player was inducted to the Baseball Hall of Fame before 2000 using their batting, pitching, and fielding results- not the number of those they received.  Please make sure to use K-fold cross validaiton and grid search to find your optimal mode. 
+* Build a preditive model that predicts whether a player was inducted to the Baseball Hall of Fame before 2000 using their batting, pitching, and fielding results- not the number of votes they received.  Please make sure to use K-fold cross validaiton and grid search to find your best model. 
 * Begin thinking about your class project.  It can be from anywhere you want -- your work, school or general interest. 
 
 ### Class 6: Linear Regression
