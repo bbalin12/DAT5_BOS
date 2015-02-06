@@ -54,12 +54,12 @@ plt.plot(df.total_hits, df.yhat, color='blue',
 # let's get a look at the residuals to see if there's heteroskedasticity
 df['residuals'] = df.total_runs - df.yhat
 
-plt = df.plot(x='total_hits', y='residuals', kind='scatter')
+plt = df.plot(x='total_runs', y='residuals', kind='scatter')
 ## there doesn't seem to be any noticable clear heteroskedasticity. 
 
 # let's calculate RMSE -- notice you use two multiply signs for exponenets
 # in Python
-RMSE = (((df.residuals) ** 2) ** (1/2)).mean()
+RMSE = (((df.residuals) ** 2).mean() ** (1/2))
 # so, on average, the model is of by about 651 runs for each observation.
 
 # lets understand the percent by which the model deviates from actuals on average
@@ -96,12 +96,22 @@ plt.plot(df.stolen_bases, df.sb_yhat, color='blue',
 # let's get a look at the residuals to see if there's heteroskedasticity
 df['sb_residuals'] = df.total_runs - df.sb_yhat
 
-plt = df.plot(x='stolen_bases', y='sb_residuals', kind='scatter')
-## there doesn't seem to be any noticable clear heteroskedasticity. 
+plt = df.plot(x='sb_yhat', y='sb_residuals', kind='scatter')
+
+df['stolen_cubed']= df.stolen_bases ** 3
+df['stolen_squared']= df.stolen_bases ** 2
+
+sb_3_est = smf.ols(formula='total_runs ~ stolen_bases + stolen_squared + stolen_cubed', data=df).fit()
+df['sb_cubed_yhat'] = sb_3_est.predict(df)
+print sb_est.summary()
+plt = df.plot(x='stolen_bases', y='total_runs', kind='scatter')
+plt.plot(df.stolen_bases, df.sb_cubed_yhat, color='blue',
+         linewidth=3)
+
 
 # let's calculate RMSE -- notice you use two multiply signs for exponenets
 # in Python
-RMSE_sb = (((df.sb_residuals) ** 2) ** (1/2)).mean()
+RMSE_sb = (((df.sb_residuals) ** 2).mean() ** (1/2))
 
 # is RMSE higher or lower for stolen bases? 
 print RMSE_sb
@@ -111,7 +121,7 @@ print RMSE
 sb_percent_avg_dev = RMSE_sb / df.total_runs.mean()
 # notice I'm using string formatting in when I print the results.
 print 'average deviation: {0}%'.format(round(sb_percent_avg_dev*100, 1))
-# looks like in-sample deviation is 11% on average -- higher than the 4% of 
+# looks like in-sample deviation is 13% on average -- higher than the 4% of 
 # hits.
 
 # let's now investigate the relationship of total runs with time.
@@ -137,6 +147,7 @@ plt.plot(df.yearID, df.binary_yhat, color='blue',
 # let's combine all three factors together: total hits, stolen bases, and year.
 large_est = smf.ols(formula='total_runs ~ total_hits + stolen_bases + from_1985_to_1995 + post_1995', data=df).fit()
 print large_est.summary()
+print est.summary()
 # many of the covariates (regressors) have p-values above 0.05.  
 # Should we include them? 
 
@@ -150,7 +161,7 @@ print est.rsquared
 df['large_yhat'] = large_est.predict(df)
 df['large_residuals'] = df.total_runs - df.large_yhat
 
-RMSE_large = (((df.large_residuals) ** 2) ** (1/2)).mean()
+RMSE_large = (((df.large_residuals) ** 2).mean() ** (1/2))
 
 print 'average deviation for large equation: {0}'.format(
                                             round(RMSE_large, 4))
@@ -194,8 +205,8 @@ df_post_2005['hits_residuals'] = df_post_2005.total_runs - df_post_2005.yhat
 df_post_2005['large_residuals'] = df_post_2005.total_runs - df_post_2005.large_yhat
 
 # calculating  RMSE
-RMSE_large = (((df_post_2005.large_residuals) ** 2) ** (1/2)).mean()
-RMSE_hits =  (((df_post_2005.hits_residuals) ** 2) ** (1/2)).mean()
+RMSE_large = (((df_post_2005.large_residuals) ** 2).mean() ** (1/2))
+RMSE_hits =  (((df_post_2005.hits_residuals) ** 2).mean() ** (1/2))
 
 print 'average deviation for large equation: {0}'.format(
                                             round(RMSE_large, 4))

@@ -167,7 +167,7 @@ number_correct = len(response_series[response_series == optimal_knn_preds])
 total_in_test_set = len(response_series)
 accuracy = number_correct / total_in_test_set
 
-## compare actual accurac with the accuracy anticipated by our grid search.
+## compare actual accuracy with the accuracy anticipated by our grid search.
 print accuracy* 100
 print best_oob_score 
 
