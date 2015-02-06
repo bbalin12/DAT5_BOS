@@ -10,6 +10,7 @@ from __future__ import division
 
 import sqlite3
 import pandas
+import numpy
 # importing statsmodels to run the linear regression
 # scikit-learn also has a linear model method, but the statsmodels version
 # has more user-friendly output.
@@ -53,8 +54,7 @@ plt.plot(df.total_hits, df.yhat, color='blue',
 
 # let's get a look at the residuals to see if there's heteroskedasticity
 df['residuals'] = df.total_runs - df.yhat
-
-plt = df.plot(x='total_runs', y='residuals', kind='scatter')
+plt = df.plot(x='yhat', y='residuals', kind='scatter')
 ## there doesn't seem to be any noticable clear heteroskedasticity. 
 
 # let's calculate RMSE -- notice you use two multiply signs for exponenets
@@ -97,20 +97,30 @@ plt.plot(df.stolen_bases, df.sb_yhat, color='blue',
 df['sb_residuals'] = df.total_runs - df.sb_yhat
 
 plt = df.plot(x='sb_yhat', y='sb_residuals', kind='scatter')
+## looks like there's some heteroskedasticity.  Let's log-transform the data.
 
-df['stolen_cubed']= df.stolen_bases ** 3
-df['stolen_squared']= df.stolen_bases ** 2
+df['sb_log'] = numpy.log(df.stolen_bases)
+df['runs_log'] = numpy.log(df.total_runs)
 
-sb_3_est = smf.ols(formula='total_runs ~ stolen_bases + stolen_squared + stolen_cubed', data=df).fit()
-df['sb_cubed_yhat'] = sb_3_est.predict(df)
-print sb_est.summary()
-plt = df.plot(x='stolen_bases', y='total_runs', kind='scatter')
-plt.plot(df.stolen_bases, df.sb_cubed_yhat, color='blue',
+sb_log_est = smf.ols(formula='runs_log ~ sb_log', data=df).fit()
+print sb_log_est.summary()
+df['sb_log_yhat'] = sb_log_est.predict(df)
+
+plt = df.plot(x='sb_log', y='runs_log', kind='scatter')
+plt.plot(df.sb_log, df.sb_log_yhat, color='blue',
          linewidth=3)
 
+## let's re-plot the errors to see if we got rid if heteroskedasticity.
+df['sb_log_residuals'] = df.runs_log - df.sb_log_yhat
+plt = df.plot(x='sb_log_yhat', y='sb_log_residuals', kind='scatter')
+### much less heteroskedastic.
 
 # let's calculate RMSE -- notice you use two multiply signs for exponenets
 # in Python
+### first, we need to inverse transform our predictions
+df['sb_yhat'] = numpy.exp(df['sb_log_yhat'])
+## then, re-create residualss
+df['sb_residuals'] = df.total_runs - df.sb_yhat
 RMSE_sb = (((df.sb_residuals) ** 2).mean() ** (1/2))
 
 # is RMSE higher or lower for stolen bases? 
