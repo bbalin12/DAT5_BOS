@@ -153,6 +153,7 @@ Tuesday | Thursday
 
 ### Class 6: Linear Regression
 [slides](slides/06_linear_regression.pdf)
+[code](code/06_linear_regression.py)
 * Overview of regression models
 * Estimating linear regression coefficients
 * Determining model relevance
