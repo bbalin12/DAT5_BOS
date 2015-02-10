@@ -13,11 +13,11 @@ Tuesday | Thursday
 1/20: [Introduction](#class-1-introduction) | 1/22: [Python & Pandas](#class-2-python-&-pandas)
 1/27: [Git and GitHub](#class-3-git-and-github) | 1/29: [SQL](#class-4-SQL)
 2/3: [Supervised Learning and Model Evaluation](#class-5-Supervised-Learning-and-Model-Evaluation) | 2/5: [Linear Regression](#class-6-Linear-and-Logistic-Regression) <br>**Milestone:** Begin Work on Question and Data Set
-2/10:  [Logistic Regression](#class-7-logistic-regression)| 2/12: [Categorical Data and Feature Selection/Elimination](#class-8-Categorical-Data-and-Feature-Selection/Elimination)
-2/17: [Unsupervised Learning and Dimensionality Reduction](#class-9-Unsupervised-Learning-and-Dimensionality-Reduction) | 2/19: [Naive Bayes, Neural Networks, and Ensemble Methods](#class-10-Naive Bayes-Neural-Networks-and-Ensemble-Methods)<br>**Milestone:** Data Exploration and Analysis Plan
-2/24: [Working a Data Problem](#class-11-working-a-data-problem) | 2/26: [Amazon Web Services & Apache Hive](#class-12-Amazon-Web Services-& Apache-Hive)<br>**Milestone:** Deadline for Topic Changes
-3/3: [Amazon Elastic MapReduce](#class-13-Amazon-Elastic-MapReduce) | 3/5: [Natural Language Processing](#class-14-natural-language-processing)
-3/10: [Decision Trees and Ensembles](#class-15-decision-trees-and-ensembles)<br>**Milestone:** First Draft | 3/12: [Advanced scikit-learn](#class-16-advanced-scikit-learn)
+2/10:  [Logistic Regression](#class-7-logistic-regression)| 2/12: [Naive Bayes, Decision Trees, and Classification Model Evaluation](#class-8-Naive-Bayes-Decision-Trees-and-Classification-Model-Evaluation)
+2/17: [Categorical Data and Feature Selection/Imputation](#class-9-Categorical-Data-and-Feature-Selection/Imputation)| 2/19:  [Unsupervised Learning and Dimensionality Reduction](#class-10-Unsupervised-Learning-and-Dimensionality-Reduction) <br>**Milestone:** Data Exploration and Analysis Plan
+2/24: [Neural Networks and Ensemble Methods](#class-11-Neural-Networks-and-Ensemble-Methods) | 2/26: [Working a Data Problem](#class-12-working-a-data-problem) <br>**Milestone:** Deadline for Topic Changes
+3/3:  [Amazon Web Services & Apache Hive](#class-13-Amazon-Web Services-& Apache-Hive)| 3/5: [Amazon Elastic MapReduce](#class-14-Amazon-Elastic-MapReduce) 
+3/10: [Natural Language Processing](#class-15-natural-language-processing)<br>**Milestone:** First Draft | 3/12: [Advanced scikit-learn](#class-16-advanced-scikit-learn)
 3/17: **No Class**  | 3/19: [Web Scraping and Data Retrieval Methods](#class-17-Web-Scraping-and-Data-Retrieval-Methods)
 3/24: [Recommenders](#class-18-recommenders) | 3/26: [Course Review, Companion Tools](#class-19-course-review-companion-tools)<br>**Milestone:** Second Draft (Optional)
 3/31: [TBD](#class-20-tbd) | 4/2: [Project Presentations](#class-21-project-presentations)
@@ -174,28 +174,44 @@ Tuesday | Thursday
 ### Class 7: Logistic Regression
 
 
-### Class 8: Categorical Data, Feature Selection
+### Class 8:  Naive Bayes, Decision Trees, and Classification Model Evaluation
+[slides](slides/08_naive_bayes_decision_trees_model_evaluation.pdf)
+* Bayes Theorem
+* Naive Bayes Classification
+* Decision Tree Classification
+* Classification Model Evaluation
+	* Confusion Matrices
+	* F1 Score
+	* Cohen's Kappa
+	* Receiver-Operating Characteristic Curves
+
+**Homework (due 2/17):**
+* Build a Naive Bayes and decision tree model for your set of features you have extracted from the Baseball Dataset to predict whether a player was inducted into the Baseball Hall of Fame before the year 2000.  
+* If you haven't already, build a logistic regression model for the same data. 
+* Compare the n-fold cross-validated accuracy, F1 score, and AUC for your three new models, and compare it to the KNN model you built for class 5.
+* Decide which of these models is the most accurate. 
+* For your best performing model, print a confusion matrix and ROC curve in your iPython interpreter for all k cross validation slices. 
+	* See [this link](http://scikit-learn.org/stable/auto_examples/plot_roc_crossval.html#example-plot-roc-crossval-py) for an example of how this is done for an ROC curve. 
+
+### Class 9: Categorical Data, Feature Selection & Imputation
 
 
-### Class 9: Naive Bayes, Neural Networks, and Ensemble Methods
+### Class 10: Naive Bayes, Neural Networks, and Ensemble Methods 
 
 
-### Class 10: Unsupervised Learning and Dimensionality Reduction
+### Class 11: Unsupervised Learning and Dimensionality Reduction
 
 
-### Class 11: Working a Data Problem
+### Class 12: Working a Data Problem
 
 
-### Class 12: Amazon Web Services & Apache Hive
+### Class 13: Amazon Web Services & Apache Hive
 
 
-### Class 13: Amazon Elastic MapReduce
+### Class 14: Amazon Elastic MapReduce
 
 
-### Class 14: Natural Language Processing
-
-
-### Class 15: Decision Trees and Ensembles
+### Class 15: Natural Language Processing
 
 
 ### Class 16: Advanced scikit-learn
