@@ -8,7 +8,7 @@ Created on Sat Feb  7 22:49:24 2015
 import pandas
 import sqlite3
 
-con = sqlite3.connect('/Users/bbalin/Documents/SQLite/lahman2013.sqlite')
+con = sqlite3.connect('/Users/Bryan/Documents/SQLite/lahman2013.sqlite')
 
 # open a cursor as we are executing a SQL statement that does 
 # not produce a pandas DataFrame
@@ -19,7 +19,7 @@ cur = con.cursor()
 # be entered into voting for the Hall of Fame for numerous years
 # in a row. 
 table_creation_query = """
-CREATE TABLE hall_of_fame_inductees as 
+CREATE TABLE hall_of_fame_inductees as  
 
 select playerID, case when average_inducted = 0 then 0 else 1 end as inducted from (
 
@@ -81,7 +81,7 @@ df.head(10)
 df.columns
 
 # dropping duplicate playerID columns
-df.drop('playerID', 1, inplace = True)
+df.drop('playerID',  1, inplace = True)
 
 # creating binary features for bats and throws
 # notice that I'm creating the binary variable as the 'left' option
@@ -96,7 +96,6 @@ df.throws_left[df.throws =='L'] = 1
 df.drop(['throws', 'bats'], 1, inplace = True)
 
 # getting summary statistics on the data
-df.describe(include = 'all')
 df.describe()
 
 
@@ -106,6 +105,9 @@ explanatory_df = df[explanatory_features]
 
 # dropping rows with no data.
 explanatory_df.dropna(how='all', inplace = True) 
+
+# extracting column names 
+explanatory_colnames = explanatory_df.columns
 
 ## doing the same for response
 response_series = df.inducted
@@ -151,7 +153,7 @@ kappa = (mean_accuracy_score - largest_class_percent_of_total) / (1-largest_clas
 print kappa
 ## kappa is highly negative.  So, if we weigh a positive prediction to be as important as a negative one, our model isn't being that great at predicting at all. 
 
-# calculating F1 score, which is the weighted average of specificity
+# calculating F1 score, which is the harmonic mean of specificity
 # and sensitivity. 
 f1_scores = cross_val_score(naive_bayes_classifier, explanatory_df, response_series, cv=10, scoring='f1', n_jobs = -1)
 
@@ -196,7 +198,7 @@ print cm
 # let's plot ROC curve
 #####
 
-## extracting probabilties fro the clasifier
+## extracting probabilties for the clasifier
 y_probabilities = pandas.DataFrame(naive_bayes_classifier.fit(xTrain, yTrain).predict_proba(xTest))
 
 from sklearn import metrics
@@ -238,6 +240,11 @@ cm = pandas.crosstab(yTest, predicted_values, rownames=['True Label'], colnames=
 print cm
 # looks a little better, right?
 
+# getting variable iportances
+importances_df = pandas.DataFrame(explanatory_colnames)
+importances_df['importances'] = decision_tree.feature_importances_
+
+
 # extracting decision tree probabilities
 predicted_probs = pandas.DataFrame(decision_tree.predict_proba(xTest))
 
@@ -250,7 +257,7 @@ plt.xlabel('False Positive Rate (1 - Specificity)')
 plt.ylabel('True Positive Rate (Sensitivity)')
 ## which ROC curve looks better? 
 
-## now let's do 5-fold CV, compute accuracy, f1, AUC, and Kappa
+## now let's do 10-fold CV, compute accuracy, f1, AUC, and Kappa
 accuracy_scores_cart = cross_val_score(decision_tree, explanatory_df, response_series, cv=10, scoring='accuracy', n_jobs = -1)
 
 print accuracy_scores_cart.mean()
@@ -348,4 +355,3 @@ plt.xlabel('False Positive Rate (1 - Specificity)')
 plt.ylabel('True Positive Rate (Sensitivity)')
 
 ## what does this tell us? 
-
