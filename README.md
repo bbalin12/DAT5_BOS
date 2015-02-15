@@ -176,7 +176,7 @@ Tuesday | Thursday
 
 ### Class 8:  Naive Bayes, Decision Trees, and Classification Model Evaluation
 [slides](slides/08_naive_bayes_decision_trees_model_evaluation.pdf)
-[code](slides/08_naive_bayes_decision_trees_model_evaluation.py)
+[code](code/08_naive_bayes_decision_trees_model_evaluation.py)
 * Bayes Theorem
 * Naive Bayes Classification
 * Decision Tree Classification
