@@ -15,7 +15,7 @@ Tuesday | Thursday
 2/3: [Supervised Learning and Model Evaluation](#class-5-Supervised-Learning-and-Model-Evaluation) | 2/5: [Linear Regression](#class-6-Linear-and-Logistic-Regression) <br>**Milestone:** Begin Work on Question and Data Set
 2/10:  [Logistic Regression](#class-7-logistic-regression)| 2/12: [Naive Bayes, Decision Trees, and Classification Model Evaluation](#class-8-Naive-Bayes-Decision-Trees-and-Classification-Model-Evaluation)
 2/17: [Data Cleaning and Manipulation](#class-9-Data Cleaning and Manipulation) | 2/19:  Makeup: Logistic Regression
-2/24: [Neural Networks and Ensemble Methods](#class-11-Neural-Networks-and-Ensemble-Methods)<br>**Milestone:** Data Exploration and Analysis Plan | 2/26: [Unsupervised Learning and Dimensionality Reduction](#class-10-Unsupervised-Learning-and-Dimensionality-Reduction)
+2/24: [Neural Networks and Ensemble Methods](#class-11-Neural-Networks-and-Ensemble-Methods)| 2/26: [Unsupervised Learning and Dimensionality Reduction](#class-10-Unsupervised-Learning-and-Dimensionality-Reduction) <br>**Milestone:** Data Exploration and Analysis Plan 
 3/3:  [Amazon Web Services & Apache Hive](#class-13-Amazon-Web Services-& Apache-Hive)| 3/5: [Amazon Elastic MapReduce](#class-14-Amazon-Elastic-MapReduce) 
 3/10: [Natural Language Processing](#class-15-natural-language-processing)<br>**Milestone:** First Draft | 3/12: [Advanced scikit-learn](#class-16-advanced-scikit-learn)
 3/17: **No Class**  | 3/19: [Web Scraping and Data Retrieval Methods](#class-17-Web-Scraping-and-Data-Retrieval-Methods)
