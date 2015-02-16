@@ -14,8 +14,8 @@ Tuesday | Thursday
 1/27: [Git and GitHub](#class-3-git-and-github) | 1/29: [SQL](#class-4-SQL)
 2/3: [Supervised Learning and Model Evaluation](#class-5-Supervised-Learning-and-Model-Evaluation) | 2/5: [Linear Regression](#class-6-Linear-and-Logistic-Regression) <br>**Milestone:** Begin Work on Question and Data Set
 2/10:  [Logistic Regression](#class-7-logistic-regression)| 2/12: [Naive Bayes, Decision Trees, and Classification Model Evaluation](#class-8-Naive-Bayes-Decision-Trees-and-Classification-Model-Evaluation)
-2/17: [Categorical Data and Feature Selection/Imputation](#class-9-Categorical-Data-and-Feature-Selection/Imputation)| 2/19:  [Unsupervised Learning and Dimensionality Reduction](#class-10-Unsupervised-Learning-and-Dimensionality-Reduction) <br>**Milestone:** Data Exploration and Analysis Plan
-2/24: [Neural Networks and Ensemble Methods](#class-11-Neural-Networks-and-Ensemble-Methods) | 2/26: [Working a Data Problem](#class-12-working-a-data-problem) <br>**Milestone:** Deadline for Topic Changes
+2/17: [Data Cleaning and Manipulation](#class-9-Data Cleaning and Manipulation) | 2/19:  Makeup: Logistic Regression
+2/24: [Neural Networks and Ensemble Methods](#class-11-Neural-Networks-and-Ensemble-Methods)<br>**Milestone:** Data Exploration and Analysis Plan | 2/26: [Unsupervised Learning and Dimensionality Reduction](#class-10-Unsupervised-Learning-and-Dimensionality-Reduction) <br>**Milestone:** Deadline for Topic Changes
 3/3:  [Amazon Web Services & Apache Hive](#class-13-Amazon-Web Services-& Apache-Hive)| 3/5: [Amazon Elastic MapReduce](#class-14-Amazon-Elastic-MapReduce) 
 3/10: [Natural Language Processing](#class-15-natural-language-processing)<br>**Milestone:** First Draft | 3/12: [Advanced scikit-learn](#class-16-advanced-scikit-learn)
 3/17: **No Class**  | 3/19: [Web Scraping and Data Retrieval Methods](#class-17-Web-Scraping-and-Data-Retrieval-Methods)
@@ -194,16 +194,31 @@ Tuesday | Thursday
 * For your best performing model, print a confusion matrix and ROC curve in your iPython interpreter for all k cross validation slices. 
 	* See [this link](http://scikit-learn.org/stable/auto_examples/plot_roc_crossval.html#example-plot-roc-crossval-py) for an example of how this is done for an ROC curve. 
 
-### Class 9: Categorical Data, Feature Selection & Imputation
+### Class 9: Data Cleaning and Manipulation
+[slides](slides/09_data_cleaning_and_manipulation.pdf)
+* Encoding & Binning Categorical Data
+* Finding Features with Perfect Correlation or No Variation
+* Feature Standardization and Imputation
+* Recursive Feature Elimination
+
+**Homework (due 2/24):**
+* Join your SQL query used in last class' homework (to predict Baseball Hall of Fame indution) with the table we created in today's class (called dominant_team_per_player). 
+* Pick at least one additional categorical feature to include in your data.
+* Bin and encode your categorical features.
+* Remove features with perfect correlation and/or no variation.
+* Scale your data and impute for your numeric NaNs.
+* Perform recursive feature elimination on the data.
+* Decide whether to use grid search to find your 'optimal' model.
+* Bring in data after the year 2000, and preform the same transformations on the data you did with your training data.
+* predict Hall of Fame induction after the year 2000. 
+
+### Class 10: Makeup for Snow Day (Logistic Regression)
 
 
-### Class 10: Naive Bayes, Neural Networks, and Ensemble Methods 
+### Class 11: Neural Netowrks and Ensemble Methods 
 
 
-### Class 11: Unsupervised Learning and Dimensionality Reduction
-
-
-### Class 12: Working a Data Problem
+### Class 12: Unsupervised Learning and Dimensionality Reduction
 
 
 ### Class 13: Amazon Web Services & Apache Hive
