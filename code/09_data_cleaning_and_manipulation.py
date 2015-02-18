@@ -126,7 +126,7 @@ def cleanup_data(df, cutoffPercent = .01):
         # get the names of the levels that make up less than 1% of the dataset
         values_to_delete = sizes[sizes<cutoffPercent].index
         df[col].ix[df[col].isin(values_to_delete)] = "Other"
-    return col
+    return df
 ##
 
 ######
@@ -158,7 +158,7 @@ def get_binary_values(data_frame):
 ## now, let's fill the NANs in our nuemeric features.
 # as before, let's impute using the mean strategy.
 from sklearn.preprocessing import Imputer
-imputer_object = Imputer(missing_values='NaN', strategy='mean', axis=0)
+imputer_object = Imputer(missing_values='NaN', strategy='median', axis=0)
 imputer_object.fit(numeric_features)
 numeric_features = pandas.DataFrame(imputer_object.transform(numeric_features), columns = numeric_features.columns)
 
@@ -166,6 +166,8 @@ numeric_features = pandas.DataFrame(imputer_object.transform(numeric_features), 
 
 explanatory_df = pandas.concat([numeric_features, encoded_data],axis = 1)
 explanatory_df.head()
+
+explanatory_df['no_variation'] = 1
 
 #now, let's find features with no variance 
 toKeep = []
@@ -269,6 +271,7 @@ def find_perfect_corr(df):
     return {'corrGroupings':result, 'toRemove':toRemove}
 ###
 
+
 ##############
 # scaling data
 #############
@@ -362,3 +365,7 @@ plt.grid(True)
 
 # now let's pull out the winning estimator.
 best_decision_tree_rfe_grid = rfe_grid_search.best_estimator_
+
+features_used_rfecv_grid = explanatory_df.columns[best_decision_tree_rfe_grid.get_support()]
+
+print features_used_rfecv_grid
