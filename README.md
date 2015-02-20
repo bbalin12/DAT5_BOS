@@ -196,6 +196,7 @@ Tuesday | Thursday
 
 ### Class 9: Data Cleaning and Manipulation
 [slides](slides/09_data_cleaning_and_manipulation.pdf)
+[code](code/09_data_cleaning_and_manipulation.py)
 * Encoding & Binning Categorical Data
 * Finding Features with Perfect Correlation or No Variation
 * Feature Standardization and Imputation
