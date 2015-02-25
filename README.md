@@ -215,17 +215,38 @@ Tuesday | Thursday
 
 
 ### Class 10: Ensemble Methods and Neural Networks
-[slides](slides/10_ ensemble_methods_and_neural_networks.pdf.pdf)
+[slides](slides/10_ ensemble_methods_and_neural_networks.pdf)
 * Random Forests
 * Boosting Trees
 * Neural Networks
 
-**Homework (due 3/2):**
+**Homework (due 3/3):**
 * Run a Random Forest (RF), Boosting Trees (GBM), and Neural Network (NN) classifier on the data you assembled in the homework from class 9.
 * See which of the methods you've used so far (RF, GBM, NN, Decision Tree, Logistic Regression, Naive Bayes) is the most accurate (measured by ROC AUC).
 * Use grid seach to optimize your NN's tuning parameters for learning_rate, iteration_range, and compoents, as well as any others you'd like to test. 
 
 ### Class 12: Unsupervised Learning and Dimensionality Reduction
+[slides](slides/11_dimensionality_reduction_and_clustering.pdf)
+* K-Means Clustering
+* DBSCAN
+* Hirearchical Clustering
+* Principal Component Analysis
+* Support Vector Machines
+
+**Homework (due 3/3):**
+
+* Find some sort of attribute in the Baseball dataset that sits on a two-dimenstional plan and has discrete clusters.
+* Perform K-Means and DBSCAN clustering
+* Determine which better represents your data and the intiution behind why the model was the best for your dataset.
+* Plot a dendrogram of your dataset.
+* Using the data from the last homework, perform principal component analysis on your data.
+* Decide how many components to keep
+* Run a Boosting Tree on the components and see if in-sample accuracy beats a classifier with the raw data not trasnformed by PCA.
+* Run a support vector machine on your data
+* Tune your SVM to optimize accuracy
+* Like what you did in class 9, bring in data after 2000, and preform the same transformations on the data you did with your training data.
+* Compare Random Forest, Boosting Tree, and SVM accuracy on the data after 2000.
+* If you wish, see if using PCA improves the accuracy of any of your models.
 
 
 ### Class 13: Amazon Web Services & Apache Hive

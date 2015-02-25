@@ -220,9 +220,9 @@ plt.plot(trees_range, grid_mean_scores)
 # where do you think we should put the tree cut-off at?
 
 # let's pull out the best estimator and print its ROC AUC
-best_decision_tree_est = grid.best_estimator_
+best_rf_est = grid.best_estimator_
 # how many trees did the best estiator have? 
-print best_decision_tree_est.n_estimators
+print best_rf_est.n_estimators
 # how accurate was the best estimator?
 print grid.best_score_
 ## did accuracy improve? 
@@ -270,7 +270,7 @@ xTrain, xTest, yTrain, yTest = train_test_split(
                     explanatory_df, response_series, test_size =  0.3)
 
 tree_probabilities = pandas.DataFrame(tree.DecisionTreeClassifier().fit(xTrain, yTrain).predict_proba(xTest))
-rf_probabilities = pandas.DataFrame(best_decision_tree_est.fit(xTrain, yTrain).predict_proba(xTest))
+rf_probabilities = pandas.DataFrame(best_rf_est.fit(xTrain, yTrain).predict_proba(xTest))
 gbm_probabilities = pandas.DataFrame(gbm_grid.best_estimator_.fit(xTrain, yTrain).predict_proba(xTest))
 
 
@@ -280,7 +280,7 @@ gbm_fpr, gbm_tpr, thresholds = metrics.roc_curve(yTest, gbm_probabilities[1])
 
 
 plt.figure()
-plt.plot(tree_fpr, tree_fpr, color = 'g')
+plt.plot(tree_fpr, tree_tpr, color = 'g')
 plt.plot(rf_fpr, rf_tpr, color = 'b')
 plt.plot(gbm_fpr, gbm_tpr, color = 'r')
 plt.xlabel('False Positive Rate (1 - Specificity)')
@@ -352,6 +352,10 @@ print nn_grid.best_score_
 ## compare to other grid best scores
 print gbm_grid.best_score_
 print grid.best_score_
+
+print nn_grid.best_params_
+
+
 # so the grid seacrch best score is tons better than the 
 # original, but lags rf and gbm.  You can probably meet or surpass
 # rf or GBM with a full grid search, but this will take a lot of time.
