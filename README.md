@@ -225,7 +225,7 @@ Tuesday | Thursday
 * See which of the methods you've used so far (RF, GBM, NN, Decision Tree, Logistic Regression, Naive Bayes) is the most accurate (measured by ROC AUC).
 * Use grid seach to optimize your NN's tuning parameters for learning_rate, iteration_range, and compoents, as well as any others you'd like to test. 
 
-### Class 12: Unsupervised Learning and Dimensionality Reduction
+### Class 11: Unsupervised Learning and Dimensionality Reduction
 [slides](slides/11_dimensionality_reduction_and_clustering.pdf)
 * K-Means Clustering
 * DBSCAN

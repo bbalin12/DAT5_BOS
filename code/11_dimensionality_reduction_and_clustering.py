@@ -96,6 +96,26 @@ dend = dendrogram(linkage(distanceMatrix, method='complete'),
            leaf_font_size=10,
            labels = df.teamID.tolist())
 
+## get cluster assignments
+assignments = fcluster(linkage(distanceMatrix, method='complete'),4,'distance')
+
+#create DataFrame with cluster assignments and names
+cluster_output = pandas.DataFrame({'team':df.teamID.tolist() , 'cluster':assignments})
+
+# let's plot the results
+plt.scatter(df.total_salaries, df.total_runs, s=60, c=cluster_output.cluster)
+## there we go -- this plot makes more sense than K-Means or DBSCAN.
+
+## let's make the plot prettier with better assingments.  
+colors = cluster_output.cluster
+colors[colors == 1] = 'b'
+colors[colors == 2] = 'g'
+colors[colors == 3] = 'r'
+
+plt.scatter(df.total_salaries, df.total_runs, s=100, c=colors,  lw=0)
+
+
+
 ########
 ###  PCA
 ########
