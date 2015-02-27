@@ -228,6 +228,7 @@ Tuesday | Thursday
 
 ### Class 10: Ensemble Methods and Neural Networks
 [slides](slides/10_ ensemble_methods_and_neural_networks.pdf)
+[code](code/10_ensemble_methods_and_neural_networks.py)
 * Random Forests
 * Boosting Trees
 * Neural Networks
@@ -239,6 +240,7 @@ Tuesday | Thursday
 
 ### Class 11: Unsupervised Learning and Dimensionality Reduction
 [slides](slides/11_dimensionality_reduction_and_clustering.pdf)
+[code](code/11_dimensionality_reduction_and_clustering)
 * K-Means Clustering
 * DBSCAN
 * Hirearchical Clustering
@@ -247,8 +249,8 @@ Tuesday | Thursday
 
 **Homework (due 3/3):**
 
-* Find some sort of attribute in the Baseball dataset that sits on a two-dimenstional plan and has discrete clusters.
-* Perform K-Means and DBSCAN clustering
+* Find some sort of attribute in the Baseball dataset that sits on a two-dimenstional plane and has discrete clusters.
+* Perform K-Means and DBSCAN clustering.
 * Determine which better represents your data and the intiution behind why the model was the best for your dataset.
 * Plot a dendrogram of your dataset.
 * Using the data from the last homework, perform principal component analysis on your data.

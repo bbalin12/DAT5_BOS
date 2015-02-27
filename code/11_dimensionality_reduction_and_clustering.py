@@ -34,13 +34,18 @@ scaler = preprocessing.StandardScaler()
 scaler.fit(data)
 data = pandas.DataFrame(scaler.transform(data), columns = data.columns)
 
+## increasing the figure size of my plots for better readabaility.
+from pylab import rcParams
+rcParams['figure.figsize'] = 10, 5
+
+
 # plot the scaled data
 plt = df.plot(x='total_salaries', y='total_runs', kind='scatter')
 
 ## annotating with team names.
-for i, txt in enumerate(df.teamID):
-    plt.annotate(txt, (df.total_salaries[i],df.total_runs[i]))
-plt.show()
+#for i, txt in enumerate(df.teamID):
+#    plt.annotate(txt, (df.total_salaries[i],df.total_runs[i]))
+#plt.show()
 
 ########
 # K-Means
@@ -78,9 +83,6 @@ plt.scatter(df.total_salaries, df.total_runs, s=60, c=labels)
 from scipy.spatial.distance import pdist
 from scipy.cluster.hierarchy import linkage, dendrogram, fcluster, fclusterdata
 
-## increasing the figure size of my plots for better readabaility.
-from pylab import rcParams
-rcParams['figure.figsize'] = 10, 5
 
 distanceMatrix = pdist(data)
 
