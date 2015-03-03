@@ -263,13 +263,18 @@ Tuesday | Thursday
 * If you wish, see if using PCA improves the accuracy of any of your models.
 
 
-### Class 13: Amazon Web Services & Apache Hive
+### Class 13: Recommendation Systems
+[slides](slides/13_recommendation_systems.pdf)
+[code](code/13_recommender_systems.py)
+* Collaborative Filtering
+* Content Based Filtering
+* Hybrid Filtering
+
+### Class 14: Natural Language Processing 
 
 
-### Class 14: Amazon Elastic MapReduce
-
-
-### Class 15: Natural Language Processing
+### Class 15: Amazon Web Services, Elastic MapReduc\
+e and Apache Hive
 
 
 ### Class 16: Advanced scikit-learn
