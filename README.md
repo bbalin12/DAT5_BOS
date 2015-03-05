@@ -270,8 +270,16 @@ Tuesday | Thursday
 * Content Based Filtering
 * Hybrid Filtering
 
-### Class 14: Natural Language Processing 
+** Homework
+* [Non-Personalized Recommenders](http://nbviewer.ipython.org/github/python-recsys/recsys-tutorial/blob/master/tutorial/0-Introduction-to-Non-Personalized-Recommenders.ipynb)
 
+### Class 14: Natural Language Processing 
+[slides](slides/14_natural_language_processing.pdf)
+* vectorizing text features
+* vector normalization
+* TF-IDF
+* cosine similarity
+* Talk about projects
 
 ### Class 15: Amazon Web Services, Elastic MapReduc\
 e and Apache Hive

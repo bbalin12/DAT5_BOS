@@ -264,7 +264,14 @@ Tuesday | Thursday
 
 
 ### Class 13: Recommendation Systems
+[slides](slides/13_recommendation_systems.pdf)
+[code](code/13_recommender_systems.py)
+* Collaborative Filtering
+* Content Based Filtering
+* Hybrid Filtering
 
+** Homework
+* [Non-Personalized Recommenders](http://nbviewer.ipython.org/github/python-recsys/recsys-tutorial/blob/master/tutorial/0-Introduction-to-Non-Personalized-Recommenders.ipynb)
 
 ### Class 14: Natural Language Processing 
 
