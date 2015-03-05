@@ -12,13 +12,6 @@ To stimulate your thinking, here is an excellent list of [public data sources](p
 You should also take a look at [past projects](https://github.com/justmarkham/DAT-project-examples) from other GA Data Science students, to get a sense of the variety and scope of projects.
 
 
-## Useful links for projects
-
-* [kaggle](http://kaggle.com)
-* [nbviewer](http://nbviewer.ipython.org)
-* [Facebook API](https://developers.facebook.com/docs/apis-and-sdks)
-* [Twitter API](https://dev.twitter.com/rest/public)
-
 ## Project Deliverables
 
 You are responsible for creating a **project paper** and a **project presentation**. The paper should be written with a technical audience in mind, while the presentation should target a more general audience. You will deliver your presentation (including slides) during the final week of class, though you are also encouraged to present it to other audiences.
@@ -109,9 +102,4 @@ If you would like additional feedback on your project, submit a revised version 
 
 ### Week 11: Presentation
 
-Deliver your project presentation in class, and submit all required deliverables (paper, slides, code, data, and data dictionary). There would be some studetns who would choose to work on data related to the company. Such students can be exempt from making a presentation if their company wishes that the presentation will affect their legal terms. If you indeed do choose to work on such a project then make sure the legal team, manager of your organization or company is aware of the fact that the Instructor, Expert-In Residence and GA team can look at your data and work as well.
-
-## GitHub Pages
-Those who wish to make a final presentation and if their data can be public then they should post their final results on their github pages. 
-
-* Here are instructions: https://pages.github.com
+Deliver your project presentation in class, and submit all required deliverables (paper, slides, code, data, and data dictionary).
