@@ -272,6 +272,7 @@ Tuesday | Thursday
 
 ** Homework
 * [Non-Personalized Recommenders](http://nbviewer.ipython.org/github/python-recsys/recsys-tutorial/blob/master/tutorial/0-Introduction-to-Non-Personalized-Recommenders.ipynb)
+* [yhat](http://help.yhathq.com/v1.0/docs/)
 
 ### Class 14: Natural Language Processing 
 [slides](slides/14_natural_language_processing.pdf)

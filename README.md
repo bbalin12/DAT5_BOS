@@ -282,6 +282,13 @@ Tuesday | Thursday
 * cosine similarity
 * Talk about projects
 
+** Homework 
+* [Text Mining](http://nbviewer.ipython.org/github/robertlayton/authorship_tutorials/blob/master/pyconau2014/PyCon%20AU%202014%20--%20Text%20mining%20online%20data%20with%20scikit-learn.ipynb)
+
+** Links
+* [Google n-grams](http://googleresearch.blogspot.com/2006/08/all-our-n-gram-are-belong-to-you.html)
+* [Twitter sentiment analysis](http://www.laurentluce.com/posts/twitter-sentiment-analysis-using-python-and-nltk/)
+
 ### Class 15: Amazon Web Services, Elastic MapReduc\
 e and Apache Hive
 
