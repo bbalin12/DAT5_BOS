@@ -10,15 +10,15 @@ Course materials for [General Assembly's Data Science course](https://generalass
 
 Tuesday | Thursday
 --- | ---
-1/20: [Introduction](#class-1-introduction) | 1/22: [Python & Pandas](#class-2-python-&-pandas)
-1/27: [Git and GitHub](#class-3-git-and-github) | 1/29: [SQL](#class-4-SQL)
-2/3: [Supervised Learning and Model Evaluation](#class-5-Supervised-Learning-and-Model-Evaluation) | 2/5: [Linear Regression](#class-6-Linear-and-Logistic-Regression) <br>**Milestone:** Begin Work on Question and Data Set
-2/10:  [Logistic Regression](#class-7-logistic-regression)| 2/12: [Naive Bayes, Decision Trees, and Classification Model Evaluation](#class-8-Naive-Bayes-Decision-Trees-and-Classification-Model-Evaluation)
-2/17: [Data Cleaning and Manipulation](#class-9-Data Cleaning and Manipulation) | 2/19:  Makeup: Logistic Regression
-2/24: [Ensemble Methods and Neural Networks](#class-10-Neural-Networks-and-Ensemble-Methods)| 2/26: [Unsupervised Learning and Dimensionality Reduction](#class-10-Unsupervised-Learning-and-Dimensionality-Reduction) <br>**Milestone:** Data Exploration and Analysis Plan 
-3/3:  [Amazon Web Services & Apache Hive](#class-13-Amazon-Web Services-& Apache-Hive)| 3/5: [Amazon Elastic MapReduce](#class-14-Amazon-Elastic-MapReduce) 
-3/10: [Natural Language Processing](#class-15-natural-language-processing)<br>**Milestone:** First Draft | 3/12: [Advanced scikit-learn](#class-16-advanced-scikit-learn)
-3/17: **No Class**  | 3/19: [Web Scraping and Data Retrieval Methods](#class-17-Web-Scraping-and-Data-Retrieval-Methods)
+1/20: [Introduction](#class-1-introduction) | 1/22: [Python & Pandas](#class-2-python--pandas)
+1/27: [Git and GitHub](#class-3-git-and-github) | 1/29: [SQL](#class-4-sql)
+2/3: [Supervised Learning and Model Evaluation](#class-5-supervised-learning-and-model-evaluation) | 2/5: [Linear Regression](#class-6-linear-regression) <br>**Milestone:** Begin Work on Question and Data Set
+2/10:  [Logistic Regression](#class-7-logistic-regression)| 2/12: [Naive Bayes, Decision Trees, and Classification Model Evaluation](#class-8-naive-bayes-decision-trees-and-classification-model-evaluation)
+2/17: [Data Cleaning and Manipulation](#class-9-data-cleaning-and-manipulation) | 2/19:  Makeup: Logistic Regression
+2/24: [Ensemble Methods and Neural Networks](#class-10-neural-networks-and-ensemble-methods)| 2/26: [Unsupervised Learning and Dimensionality Reduction](#class-10-unsupervised-learning-and-dimensionality-reduction) <br>**Milestone:** Data Exploration and Analysis Plan 
+3/3:  [Amazon Web Services & Apache Hive](#class-13-amazon-web-services--apache-hive)| 3/5: [Amazon Elastic MapReduce](#class-14-natural-language-processing) 
+3/10: [Natural Language Processing](#class-13-recommendation-systems)<br>**Milestone:** First Draft | 3/12: [Advanced scikit-learn](#class-16-advanced-scikit-learn)
+3/17: **No Class**  | 3/19: [Web Scraping and Data Retrieval Methods](#class-17-web-scraping-and-data-retrieval-methods)
 3/24: [Recommenders](#class-18-recommenders) | 3/26: [Course Review, Companion Tools](#class-19-course-review-companion-tools)<br>**Milestone:** Second Draft (Optional)
 3/31: [TBD](#class-20-tbd) | 4/2: [Project Presentations](#class-21-project-presentations)
 4/7: [Project Presentations](#class-22-project-presentations) |
@@ -186,7 +186,7 @@ Tuesday | Thursday
 	* Cross validate your model and print out the coeffecients of the best model.
 	* Considering any two features, generate a scatter plot with a class separable line showing the classification.
 
-### Class 8:  Naive Bayes, Decision Trees, and Classification Model Evaluation
+### Class 8: Naive Bayes, Decision Trees, and Classification Model Evaluation
 [slides](slides/08_naive_bayes_decision_trees_model_evaluation.pdf)
 [code](code/08_naive_bayes_decision_trees_model_evaluation.py)
 * Bayes Theorem
@@ -289,8 +289,7 @@ Tuesday | Thursday
 * [Google n-grams](http://googleresearch.blogspot.com/2006/08/all-our-n-gram-are-belong-to-you.html)
 * [Twitter sentiment analysis](http://www.laurentluce.com/posts/twitter-sentiment-analysis-using-python-and-nltk/)
 
-### Class 15: Big Data I - Hadoop and Map Reduce
-### During
+### Class 15: Amazon Web Services, Elastic MapReduce and Apache Hive
 
 Application presentation.
 
