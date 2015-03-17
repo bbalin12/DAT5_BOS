@@ -9,7 +9,7 @@ import pandas
 
 # connect to the baseball database. Notice I am passing the full path
 # to the SQLite file.
-conn = sqlite3.connect('/Users/Bryan/Documents/SQLite/lahman2013.sqlite')
+conn = sqlite3.connect('../data/lahman2013.sqlite')
 
 # creating an object contraining a string that has the SQL query. Notice that
 # I am using triple quotes to allow my query to exist on multiple lines.
@@ -35,7 +35,7 @@ conn.close()
 df.fillna(0, inplace = True)
 
 # re-opening the connection to SQLite.
-conn = sqlite3.connect('/Users/Bryan/Documents/SQLite/lahman2013.sqlite')
+conn = sqlite3.connect('../data/lahman2013.sqlite')
 # writing the table back to the database.
 # If the table already exists, I'm opting to replace it.  
 df.to_sql('pandas_table', conn, if_exists = 'replace')

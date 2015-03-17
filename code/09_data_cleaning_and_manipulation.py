@@ -13,7 +13,7 @@ pandas.set_option('display.max_columns', None)
 
 # first, let's create a categorical feature that shows the dominant team 
 # played per player
-con = sqlite3.connect('/Users/Bryan/Documents/SQLite/lahman2013.sqlite')
+con = sqlite3.connect('../data/lahman2013.sqlite')
 query = 'select playerID, teamID from Batting'
 df = pandas.read_sql(query, con)
 con.close()
@@ -23,7 +23,7 @@ con.close()
 majority_team_by_player = df.groupby(['playerID']).agg(lambda x:x.value_counts().idxmax())
 
 ## write the data back to the database
-conn = sqlite3.connect('/Users/Bryan/Documents/SQLite/lahman2013.sqlite')
+conn = sqlite3.connect('../data/lahman2013.sqlite')
 majority_team_by_player.to_sql('dominant_team_per_player', conn, if_exists = 'replace')
 # closing the connection.
 conn.close()
@@ -64,7 +64,7 @@ LEFT OUTER JOIN dominant_team_per_player d on d.playerID = hfi.playerID
 where batting.playerID is not null
 """
 
-con = sqlite3.connect('/Users/Bryan/Documents/SQLite/lahman2013.sqlite')
+con = sqlite3.connect('../data/lahman2013.sqlite')
 df = pandas.read_sql(monster_query, con)
 con.close()
 

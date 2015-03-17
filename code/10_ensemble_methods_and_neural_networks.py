@@ -114,7 +114,7 @@ LEFT OUTER JOIN dominant_team_per_player d on d.playerID = hfi.playerID
 where batting.playerID is not null
 """
 
-con = sqlite3.connect('/Users/Bryan/Documents/SQLite/lahman2013.sqlite')
+con = sqlite3.connect('../data/lahman2013.sqlite')
 df = pandas.read_sql(monster_query, con)
 con.close()
 

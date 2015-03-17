@@ -17,7 +17,7 @@ import numpy
 import statsmodels.formula.api as smf
 
 # connect to the baseball database. 
-conn = sqlite3.connect('/Users/Bryan/Documents/SQLite/lahman2013.sqlite')
+conn = sqlite3.connect('../data/lahman2013.sqlite')
 # SQL
 sql = """select yearID, sum(R) as total_runs, sum(H) as total_hits, sum(SB) as stolen_bases, sum(SO) as strikeouts, sum(IBB) as total_intentional_walks
 from Batting 
@@ -188,7 +188,7 @@ plt.plot(df.yearID, df.large_yhat, color='red',
          linewidth=3)
 
 # let's look at data after 2005.
-conn = sqlite3.connect('/Users/Bryan/Documents/SQLite/lahman2013.sqlite')
+conn = sqlite3.connect('../data/lahman2013.sqlite')
 # creating an object contraining a string that has the SQL query. 
 sql = """select yearID, sum(R) as total_runs, sum(H) as total_hits, sum(SB) as stolen_bases, sum(SO) as strikeouts, sum(IBB) as total_intentional_walks
 from Batting 

@@ -8,7 +8,7 @@ Created on Sat Feb  7 22:49:24 2015
 import pandas
 import sqlite3
 
-con = sqlite3.connect('/Users/Bryan/Documents/SQLite/lahman2013.sqlite')
+con = sqlite3.connect('../data/lahman2013.sqlite')
 
 # open a cursor as we are executing a SQL statement that does 
 # not produce a pandas DataFrame

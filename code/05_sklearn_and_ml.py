@@ -22,7 +22,7 @@ CROSS_VALIDATION_AMOUNT = .2
 
 # connect to the baseball database. Notice I am passing the full path
 # to the SQLite file.
-conn = sqlite3.connect('/Users/Bryan/Documents/SQLite/lahman2013.sqlite')
+conn = sqlite3.connect('../data/lahman2013.sqlite')
 # creating an object contraining a string that has the SQL query. 
 sql = 'SELECT playerID, ballots, votes, inducted FROM HallofFame WHERE yearID <2000;'
 # passing the connection and the SQL string to pandas.read_sql.
@@ -149,7 +149,7 @@ Knn_optimal = grid.best_estimator_
 
 
 ## pull in data from 2000 onwards
-conn = sqlite3.connect('/Users/Bryan/Documents/SQLite/lahman2013.sqlite')
+conn = sqlite3.connect('../data/lahman2013.sqlite')
 sql = 'SELECT playerID, ballots, votes, inducted FROM HallofFame WHERE yearID >=2000;'
 df = pandas.read_sql(sql, conn)
 conn.close()
