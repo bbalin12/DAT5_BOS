@@ -394,7 +394,11 @@ Optional:
  * Go through an old Twitter [deck](http://www.slideshare.net/kevinweil/hadoop-pig-and-twitter-nosql-east-2009) on why Pig is good.
  * Read about why [Spark is a Crossover Hit For Data Scientists](http://blog.cloudera.com/blog/2014/03/why-apache-spark-is-a-crossover-hit-for-data-scientists/).
 
-### Class 16: Advanced scikit-learn
+### Class 16: NLP Bootcamp - LSI
+[Slides](https://docs.google.com/presentation/d/1wv6r2p7lXKepoeX4WIvkqBMThELkI5irQYYtZWfyX70/pub?slide=id.g3aa5c6c7c_05) on NLP
+
+The entire class will be spent working together on the LSI Workshop in the IPython Notebook below, with occasional references to the guest lecture slides above.
+[LSI Workshop](code/L16)
 
 
 ### Class 17: Web Scraping and Data Retrieval Methods
