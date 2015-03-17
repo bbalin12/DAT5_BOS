@@ -17,7 +17,7 @@ Tuesday | Thursday
 2/17: [Data Cleaning and Manipulation](#class-9-data-cleaning-and-manipulation) | 2/19:  Makeup: Logistic Regression
 2/24: [Ensemble Methods and Neural Networks](#class-10-neural-networks-and-ensemble-methods)| 2/26: [Unsupervised Learning and Dimensionality Reduction](#class-10-unsupervised-learning-and-dimensionality-reduction) <br>**Milestone:** Data Exploration and Analysis Plan 
 3/3:  [Amazon Web Services & Apache Hive](#class-13-amazon-web-services--apache-hive)| 3/5: [Amazon Elastic MapReduce](#class-14-natural-language-processing) 
-3/10: [Natural Language Processing](#class-13-recommendation-systems)<br>**Milestone:** First Draft | 3/12: [Advanced scikit-learn](#class-16-advanced-scikit-learn)
+3/10: [Natural Language Processing](#class-13-recommendation-systems)<br>**Milestone:** First Draft | 3/12: [NLP Bootcamp - LSI](#class-16-nlp-bootcamp---lsi)
 3/17: **No Class**  | 3/19: [Web Scraping and Data Retrieval Methods](#class-17-web-scraping-and-data-retrieval-methods)
 3/24: [Recommenders](#class-18-recommenders) | 3/26: [Course Review, Companion Tools](#class-19-course-review-companion-tools)<br>**Milestone:** Second Draft (Optional)
 3/31: [TBD](#class-20-tbd) | 4/2: [Project Presentations](#class-21-project-presentations)
@@ -399,6 +399,8 @@ Optional:
 
 The entire class will be spent working together on the LSI Workshop in the IPython Notebook below, with occasional references to the guest lecture slides above.
 [LSI Workshop](code/L16)
+
+http://nbviewer.ipython.org/github/bbalin12/DAT5_BOS/blob/master/code/L16/LSI.ipynb
 
 
 ### Class 17: Web Scraping and Data Retrieval Methods
