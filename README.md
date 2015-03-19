@@ -172,7 +172,7 @@ Tuesday | Thursday
 	* Decide on the best model to use, and justify why you made that choice. 
 
 ### Class 7: Logistic Regression
-[code](code/07_logistic_regression)
+[code](code/07_logistic_regression.py)
 * Comparison to Linear Regression
 * Probability review
 * logistic regression
