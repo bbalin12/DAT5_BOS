@@ -240,7 +240,7 @@ Tuesday | Thursday
 
 ### Class 11: Unsupervised Learning and Dimensionality Reduction
 [slides](slides/11_dimensionality_reduction_and_clustering.pdf)
-[code](code/11_dimensionality_reduction_and_clustering)
+[code](code/11_dimensionality_reduction_and_clustering.py)
 * K-Means Clustering
 * DBSCAN
 * Hirearchical Clustering
